@@ -112,4 +112,14 @@ using (var scope = app.Services.CreateScope())
     }
 }
 
-app.Run();
+// app.Run();
+try
+{
+    app.Run();
+}
+catch (Exception ex)
+{
+    // This writes the actual exception to a file you can read in Kudu
+    System.IO.File.WriteAllText("/home/LogFiles/startup-error.txt", ex.ToString());
+    throw;
+}
