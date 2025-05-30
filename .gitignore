@@ -18,7 +18,7 @@ EduSyncBackend/.env
 # ASP.NET secrets
 EduSyncBackend/appsettings.Development.json
 EduSyncBackend/appsettings.Local.json
-EduSyncBackend/appsettings.*.json
+# EduSyncBackend/appsettings.*.json
 EduSyncBackend/appsettings.json
 **/appsettings.json
 
