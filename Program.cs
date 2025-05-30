@@ -9,6 +9,11 @@ using EduSync.Backend.Services;
 
 var builder = WebApplication.CreateBuilder(args);
 
+
+// Load appsettings.Production.json explicitly (optional)
+builder.Configuration
+    .AddJsonFile("appsettings.Production.json", optional: true, reloadOnChange: true);
+    
 // Add services to the container.
 builder.Services.AddControllers()
     .AddJsonOptions(options =>
@@ -60,7 +65,7 @@ builder.Services.AddCors(options =>
     options.AddPolicy("AllowAll",
         builder =>
         {
-            builder.WithOrigins("http://localhost:3000") // Add your frontend URL
+            builder.WithOrigins("https://lively-mud-088e4e700.6.azurestaticapps.net") // Add your frontend URL
                    .AllowAnyMethod()
                    .AllowAnyHeader()
                    .AllowCredentials();

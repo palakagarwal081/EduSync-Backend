@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("EduSync.Backend")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+910ac1a5c5913a2555d23e51688e81de1a222c85")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+4f3bc05843c7ca86449bde448da723a899a106ee")]
 [assembly: System.Reflection.AssemblyProductAttribute("EduSync.Backend")]
 [assembly: System.Reflection.AssemblyTitleAttribute("EduSync.Backend")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
