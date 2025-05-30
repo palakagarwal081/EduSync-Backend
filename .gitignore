@@ -1,0 +1,53 @@
+
+# User-specific files
+EduSyncBackend/.vs/
+EduSyncBackend/.vscode/
+EduSyncBackend/*.user
+EduSyncBackend/*.suo
+
+# Build results
+EduSyncBackend/bin/
+EduSyncBackend/obj/
+EduSyncBackend/TestResults/
+EduSyncBackend/.vs/
+EduSyncBackend/.idea/
+EduSyncBackend/.tmp/
+EduSyncBackend/.DS_Store
+EduSyncBackend/.env
+
+# ASP.NET secrets
+EduSyncBackend/appsettings.Development.json
+EduSyncBackend/appsettings.Local.json
+EduSyncBackend/appsettings.*.json
+EduSyncBackend/appsettings.json
+**/appsettings.json
+
+# Rider IDE
+EduSyncBackend/.idea/
+
+# DotCover
+EduSyncBackend/*.dotCover
+
+# Logs
+EduSyncBackend/logs/
+EduSyncBackend/*.log
+
+# NuGet
+EduSyncBackend/packages/
+EduSyncBackend/nuget.exe
+
+# Publish outputs
+EduSyncBackend/publish/
+EduSyncBackend/wwwroot/
+
+# =========================
+# General
+# =========================
+
+*.swp
+*.swo
+*.tmp
+*.bak
+*.old
+
+# End of .gitignore

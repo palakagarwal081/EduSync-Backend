@@ -1,0 +1,361 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "E:\\New folder\\EduSyncBackend\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{F2BC64AC-0DBE-4234-B2E9-F834E2EDB6D4}|EduSync.Backend.csproj|e:\\new folder\\edusyncbackend\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{F2BC64AC-0DBE-4234-B2E9-F834E2EDB6D4}|EduSync.Backend.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F2BC64AC-0DBE-4234-B2E9-F834E2EDB6D4}|EduSync.Backend.csproj|e:\\new folder\\edusyncbackend\\data\\projectdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F2BC64AC-0DBE-4234-B2E9-F834E2EDB6D4}|EduSync.Backend.csproj|solutionrelative:data\\projectdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F2BC64AC-0DBE-4234-B2E9-F834E2EDB6D4}|EduSync.Backend.csproj|e:\\new folder\\edusyncbackend\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{F2BC64AC-0DBE-4234-B2E9-F834E2EDB6D4}|EduSync.Backend.csproj|solutionrelative:properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F2BC64AC-0DBE-4234-B2E9-F834E2EDB6D4}|EduSync.Backend.csproj|e:\\new folder\\edusyncbackend\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F2BC64AC-0DBE-4234-B2E9-F834E2EDB6D4}|EduSync.Backend.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F2BC64AC-0DBE-4234-B2E9-F834E2EDB6D4}|EduSync.Backend.csproj|e:\\new folder\\edusyncbackend\\dtos\\enrollmentdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F2BC64AC-0DBE-4234-B2E9-F834E2EDB6D4}|EduSync.Backend.csproj|solutionrelative:dtos\\enrollmentdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F2BC64AC-0DBE-4234-B2E9-F834E2EDB6D4}|EduSync.Backend.csproj|e:\\new folder\\edusyncbackend\\controllers\\enrollmentscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F2BC64AC-0DBE-4234-B2E9-F834E2EDB6D4}|EduSync.Backend.csproj|solutionrelative:controllers\\enrollmentscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F2BC64AC-0DBE-4234-B2E9-F834E2EDB6D4}|EduSync.Backend.csproj|e:\\new folder\\edusyncbackend\\models\\enrollment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F2BC64AC-0DBE-4234-B2E9-F834E2EDB6D4}|EduSync.Backend.csproj|solutionrelative:models\\enrollment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F2BC64AC-0DBE-4234-B2E9-F834E2EDB6D4}|EduSync.Backend.csproj|e:\\new folder\\edusyncbackend\\dtos\\coursedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F2BC64AC-0DBE-4234-B2E9-F834E2EDB6D4}|EduSync.Backend.csproj|solutionrelative:dtos\\coursedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F2BC64AC-0DBE-4234-B2E9-F834E2EDB6D4}|EduSync.Backend.csproj|e:\\new folder\\edusyncbackend\\dtos\\resultdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F2BC64AC-0DBE-4234-B2E9-F834E2EDB6D4}|EduSync.Backend.csproj|solutionrelative:dtos\\resultdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F2BC64AC-0DBE-4234-B2E9-F834E2EDB6D4}|EduSync.Backend.csproj|e:\\new folder\\edusyncbackend\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F2BC64AC-0DBE-4234-B2E9-F834E2EDB6D4}|EduSync.Backend.csproj|solutionrelative:controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F2BC64AC-0DBE-4234-B2E9-F834E2EDB6D4}|EduSync.Backend.csproj|e:\\new folder\\edusyncbackend\\models\\result.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F2BC64AC-0DBE-4234-B2E9-F834E2EDB6D4}|EduSync.Backend.csproj|solutionrelative:models\\result.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F2BC64AC-0DBE-4234-B2E9-F834E2EDB6D4}|EduSync.Backend.csproj|e:\\new folder\\edusyncbackend\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F2BC64AC-0DBE-4234-B2E9-F834E2EDB6D4}|EduSync.Backend.csproj|solutionrelative:models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F2BC64AC-0DBE-4234-B2E9-F834E2EDB6D4}|EduSync.Backend.csproj|e:\\new folder\\edusyncbackend\\models\\course.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F2BC64AC-0DBE-4234-B2E9-F834E2EDB6D4}|EduSync.Backend.csproj|solutionrelative:models\\course.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F2BC64AC-0DBE-4234-B2E9-F834E2EDB6D4}|EduSync.Backend.csproj|e:\\new folder\\edusyncbackend\\controllers\\resultscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F2BC64AC-0DBE-4234-B2E9-F834E2EDB6D4}|EduSync.Backend.csproj|solutionrelative:controllers\\resultscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F2BC64AC-0DBE-4234-B2E9-F834E2EDB6D4}|EduSync.Backend.csproj|e:\\new folder\\edusyncbackend\\dtos\\assessmentdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F2BC64AC-0DBE-4234-B2E9-F834E2EDB6D4}|EduSync.Backend.csproj|solutionrelative:dtos\\assessmentdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F2BC64AC-0DBE-4234-B2E9-F834E2EDB6D4}|EduSync.Backend.csproj|e:\\new folder\\edusyncbackend\\models\\assessment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F2BC64AC-0DBE-4234-B2E9-F834E2EDB6D4}|EduSync.Backend.csproj|solutionrelative:models\\assessment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F2BC64AC-0DBE-4234-B2E9-F834E2EDB6D4}|EduSync.Backend.csproj|e:\\new folder\\edusyncbackend\\controllers\\assessmentscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F2BC64AC-0DBE-4234-B2E9-F834E2EDB6D4}|EduSync.Backend.csproj|solutionrelative:controllers\\assessmentscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F2BC64AC-0DBE-4234-B2E9-F834E2EDB6D4}|EduSync.Backend.csproj|e:\\new folder\\edusyncbackend\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F2BC64AC-0DBE-4234-B2E9-F834E2EDB6D4}|EduSync.Backend.csproj|solutionrelative:controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F2BC64AC-0DBE-4234-B2E9-F834E2EDB6D4}|EduSync.Backend.csproj|e:\\new folder\\edusyncbackend\\dtos\\userdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F2BC64AC-0DBE-4234-B2E9-F834E2EDB6D4}|EduSync.Backend.csproj|solutionrelative:dtos\\userdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\EduSync-Project\\EduSync.Backend\\Data\\Migrations\\20250516165130_InitialCreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 7,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{e1b7d1f8-9b3c-49b1-8f4f-bfc63a88835d}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:130:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:130:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:131:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "launchSettings.json",
+              "DocumentMoniker": "E:\\New folder\\EduSyncBackend\\Properties\\launchSettings.json",
+              "RelativeDocumentMoniker": "Properties\\launchSettings.json",
+              "ToolTip": "E:\\New folder\\EduSyncBackend\\Properties\\launchSettings.json",
+              "RelativeToolTip": "Properties\\launchSettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-05-24T08:18:58.027Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "E:\\New folder\\EduSyncBackend\\appsettings.json",
+              "RelativeDocumentMoniker": "appsettings.json",
+              "ToolTip": "E:\\New folder\\EduSyncBackend\\appsettings.json",
+              "RelativeToolTip": "appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAABbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-05-15T09:08:54.242Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Enrollment.cs",
+              "DocumentMoniker": "E:\\New folder\\EduSyncBackend\\Models\\Enrollment.cs",
+              "RelativeDocumentMoniker": "Models\\Enrollment.cs",
+              "ToolTip": "E:\\New folder\\EduSyncBackend\\Models\\Enrollment.cs",
+              "RelativeToolTip": "Models\\Enrollment.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAABHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-23T16:34:11.764Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "ResultDto.cs",
+              "DocumentMoniker": "E:\\New folder\\EduSyncBackend\\DTOs\\ResultDto.cs",
+              "RelativeDocumentMoniker": "DTOs\\ResultDto.cs",
+              "ToolTip": "E:\\New folder\\EduSyncBackend\\DTOs\\ResultDto.cs",
+              "RelativeToolTip": "DTOs\\ResultDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAABEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-16T09:50:53.382Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Result.cs",
+              "DocumentMoniker": "E:\\New folder\\EduSyncBackend\\Models\\Result.cs",
+              "RelativeDocumentMoniker": "Models\\Result.cs",
+              "ToolTip": "E:\\New folder\\EduSyncBackend\\Models\\Result.cs",
+              "RelativeToolTip": "Models\\Result.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAA1wBcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-16T09:11:22.64Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Program.cs",
+              "DocumentMoniker": "E:\\New folder\\EduSyncBackend\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "E:\\New folder\\EduSyncBackend\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAFcAAAAAAAAAAADwv2EAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-15T07:07:15.013Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "EnrollmentsController.cs",
+              "DocumentMoniker": "E:\\New folder\\EduSyncBackend\\Controllers\\EnrollmentsController.cs",
+              "RelativeDocumentMoniker": "Controllers\\EnrollmentsController.cs",
+              "ToolTip": "E:\\New folder\\EduSyncBackend\\Controllers\\EnrollmentsController.cs",
+              "RelativeToolTip": "Controllers\\EnrollmentsController.cs",
+              "ViewState": "AgIAAHUAAAAAAAAAAAAAwIQAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-23T16:55:43.59Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ProjectDBContext.cs",
+              "DocumentMoniker": "E:\\New folder\\EduSyncBackend\\Data\\ProjectDBContext.cs",
+              "RelativeDocumentMoniker": "Data\\ProjectDBContext.cs",
+              "ToolTip": "E:\\New folder\\EduSyncBackend\\Data\\ProjectDBContext.cs",
+              "RelativeToolTip": "Data\\ProjectDBContext.cs",
+              "ViewState": "AgIAABMAAAAAAAAAAAA5wBoAAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-15T05:15:14.419Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "CourseDto.cs",
+              "DocumentMoniker": "E:\\New folder\\EduSyncBackend\\DTOs\\CourseDto.cs",
+              "RelativeDocumentMoniker": "DTOs\\CourseDto.cs",
+              "ToolTip": "E:\\New folder\\EduSyncBackend\\DTOs\\CourseDto.cs",
+              "RelativeToolTip": "DTOs\\CourseDto.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAA1wBQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-16T09:50:27.295Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "EnrollmentDto.cs",
+              "DocumentMoniker": "E:\\New folder\\EduSyncBackend\\DTOs\\EnrollmentDto.cs",
+              "RelativeDocumentMoniker": "DTOs\\EnrollmentDto.cs",
+              "ToolTip": "E:\\New folder\\EduSyncBackend\\DTOs\\EnrollmentDto.cs",
+              "RelativeToolTip": "DTOs\\EnrollmentDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-23T17:04:03.852Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "UsersController.cs",
+              "DocumentMoniker": "E:\\New folder\\EduSyncBackend\\Controllers\\UsersController.cs",
+              "RelativeDocumentMoniker": "Controllers\\UsersController.cs",
+              "ToolTip": "E:\\New folder\\EduSyncBackend\\Controllers\\UsersController.cs",
+              "RelativeToolTip": "Controllers\\UsersController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACQAAAA4AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-16T19:16:36.133Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "User.cs",
+              "DocumentMoniker": "E:\\New folder\\EduSyncBackend\\Models\\User.cs",
+              "RelativeDocumentMoniker": "Models\\User.cs",
+              "ToolTip": "E:\\New folder\\EduSyncBackend\\Models\\User.cs",
+              "RelativeToolTip": "Models\\User.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABYAAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-16T05:46:33.329Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Course.cs",
+              "DocumentMoniker": "E:\\New folder\\EduSyncBackend\\Models\\Course.cs",
+              "RelativeDocumentMoniker": "Models\\Course.cs",
+              "ToolTip": "E:\\New folder\\EduSyncBackend\\Models\\Course.cs",
+              "RelativeToolTip": "Models\\Course.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABQAAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-16T09:10:15.915Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "ResultsController.cs",
+              "DocumentMoniker": "E:\\New folder\\EduSyncBackend\\Controllers\\ResultsController.cs",
+              "RelativeDocumentMoniker": "Controllers\\ResultsController.cs",
+              "ToolTip": "E:\\New folder\\EduSyncBackend\\Controllers\\ResultsController.cs",
+              "RelativeToolTip": "Controllers\\ResultsController.cs",
+              "ViewState": "AgIAAFcAAAAAAAAAAAAcwG0AAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-15T05:10:32.386Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "AssessmentDto.cs",
+              "DocumentMoniker": "E:\\New folder\\EduSyncBackend\\DTOs\\AssessmentDto.cs",
+              "RelativeDocumentMoniker": "DTOs\\AssessmentDto.cs",
+              "ToolTip": "E:\\New folder\\EduSyncBackend\\DTOs\\AssessmentDto.cs",
+              "RelativeToolTip": "DTOs\\AssessmentDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-16T09:50:41.6Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "AssessmentsController.cs",
+              "DocumentMoniker": "E:\\New folder\\EduSyncBackend\\Controllers\\AssessmentsController.cs",
+              "RelativeDocumentMoniker": "Controllers\\AssessmentsController.cs",
+              "ToolTip": "E:\\New folder\\EduSyncBackend\\Controllers\\AssessmentsController.cs",
+              "RelativeToolTip": "Controllers\\AssessmentsController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAHcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-15T05:10:20.409Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "AuthController.cs",
+              "DocumentMoniker": "E:\\New folder\\EduSyncBackend\\Controllers\\AuthController.cs",
+              "RelativeDocumentMoniker": "Controllers\\AuthController.cs",
+              "ToolTip": "E:\\New folder\\EduSyncBackend\\Controllers\\AuthController.cs",
+              "RelativeToolTip": "Controllers\\AuthController.cs",
+              "ViewState": "AgIAABsAAAAAAAAAAAA1wBkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-18T17:09:37.038Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "UserDto.cs",
+              "DocumentMoniker": "E:\\New folder\\EduSyncBackend\\DTOs\\UserDto.cs",
+              "RelativeDocumentMoniker": "DTOs\\UserDto.cs",
+              "ToolTip": "E:\\New folder\\EduSyncBackend\\DTOs\\UserDto.cs",
+              "RelativeToolTip": "DTOs\\UserDto.cs",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAgwBMAAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-16T09:49:38.033Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "Assessment.cs",
+              "DocumentMoniker": "E:\\New folder\\EduSyncBackend\\Models\\Assessment.cs",
+              "RelativeDocumentMoniker": "Models\\Assessment.cs",
+              "ToolTip": "E:\\New folder\\EduSyncBackend\\Models\\Assessment.cs",
+              "RelativeToolTip": "Models\\Assessment.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-16T09:10:59.35Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "20250516165130_InitialCreate.cs",
+              "DocumentMoniker": "D:\\EduSync-Project\\EduSync.Backend\\Data\\Migrations\\20250516165130_InitialCreate.cs",
+              "ToolTip": "D:\\EduSync-Project\\EduSync.Backend\\Data\\Migrations\\20250516165130_InitialCreate.cs",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-16T16:51:30.715Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
