@@ -8,9 +8,6 @@ using System.Text;
 
 var builder = WebApplication.CreateBuilder(args);
 
-// Optional: Load local production config for local testing
-builder.Configuration.AddJsonFile("appsettings.Production.json", optional: true, reloadOnChange: true);
-
 // Add services to the container
 builder.Services.AddControllers()
     .AddJsonOptions(options =>

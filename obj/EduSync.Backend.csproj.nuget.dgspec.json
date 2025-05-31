@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\dell\\Desktop\\New folder\\EduSyncBackend\\EduSync.Backend.csproj": {}
+    "C:\\Users\\dell\\Desktop\\ParallelProject\\EduSyncBackend\\EduSync.Backend.csproj": {}
   },
   "projects": {
-    "C:\\Users\\dell\\Desktop\\New folder\\EduSyncBackend\\EduSync.Backend.csproj": {
+    "C:\\Users\\dell\\Desktop\\ParallelProject\\EduSyncBackend\\EduSync.Backend.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\dell\\Desktop\\New folder\\EduSyncBackend\\EduSync.Backend.csproj",
+        "projectUniqueName": "C:\\Users\\dell\\Desktop\\ParallelProject\\EduSyncBackend\\EduSync.Backend.csproj",
         "projectName": "EduSync.Backend",
-        "projectPath": "C:\\Users\\dell\\Desktop\\New folder\\EduSyncBackend\\EduSync.Backend.csproj",
+        "projectPath": "C:\\Users\\dell\\Desktop\\ParallelProject\\EduSyncBackend\\EduSync.Backend.csproj",
         "packagesPath": "C:\\Users\\dell\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\dell\\Desktop\\New folder\\EduSyncBackend\\obj\\",
+        "outputPath": "C:\\Users\\dell\\Desktop\\ParallelProject\\EduSyncBackend\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

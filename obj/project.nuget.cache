@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "S+af2mwHs2k=",
+  "dgSpecHash": "l7e4bIAcX/E=",
   "success": true,
-  "projectFilePath": "C:\\Users\\dell\\Desktop\\New folder\\EduSyncBackend\\EduSync.Backend.csproj",
+  "projectFilePath": "C:\\Users\\dell\\Desktop\\ParallelProject\\EduSyncBackend\\EduSync.Backend.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\dell\\.nuget\\packages\\azure.core\\1.44.1\\azure.core.1.44.1.nupkg.sha512",
     "C:\\Users\\dell\\.nuget\\packages\\azure.identity\\1.11.4\\azure.identity.1.11.4.nupkg.sha512",
