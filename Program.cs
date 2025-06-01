@@ -67,7 +67,8 @@ builder.Services.AddCors(options =>
 {
     options.AddPolicy("AllowAll", cors =>
     {
-        cors.WithOrigins("https://lively-mud-088e4e700.6.azurestaticapps.net")
+        cors.WithOrigins("http://localhost:3000",
+                "https://lively-mud-088e4e700.6.azurestaticapps.net")
             .AllowAnyMethod()
             .AllowAnyHeader()
             .AllowCredentials();
