@@ -18,7 +18,7 @@ namespace EduSync.Backend.Services
 
         public BlobStorageService(IConfiguration configuration, ILogger<BlobStorageService> logger)
         {
-            _connectionString = configuration.GetSection("AzureBlobStorage:ConnectionString").Value;
+            _connectionString = configuration.GetSection("AzureStorage:ConnectionString").Value;
             _containerName = configuration.GetSection("AzureBlobStorage:ContainerName").Value;
             
             _logger = logger;
