@@ -1,0 +1,6 @@
+@AppInsightsLoggerDemo_HostAddress = http://localhost:5063
+
+GET {{AppInsightsLoggerDemo_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
