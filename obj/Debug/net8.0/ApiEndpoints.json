@@ -9,7 +9,7 @@
     "Parameters": [],
     "ReturnTypes": [
       {
-        "Type": "System.Collections.Generic.IEnumerable\u00601[[EduSync.API.DTOs.AssessmentDto, EduSync.Backend, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[EduSync.Backend.DTOs.AssessmentDto, EduSync.Backend, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
         "MediaTypes": [
           "text/plain",
           "application/json",
@@ -28,14 +28,14 @@
     "Order": 0,
     "Parameters": [
       {
-        "Name": "dto",
-        "Type": "EduSync.API.DTOs.CreateAssessmentDto",
+        "Name": "createDto",
+        "Type": "EduSync.Backend.DTOs.CreateAssessmentDto",
         "IsRequired": true
       }
     ],
     "ReturnTypes": [
       {
-        "Type": "EduSync.Backend.Models.Assessment",
+        "Type": "EduSync.Backend.DTOs.AssessmentDto",
         "MediaTypes": [
           "text/plain",
           "application/json",
@@ -61,7 +61,7 @@
     ],
     "ReturnTypes": [
       {
-        "Type": "EduSync.Backend.Models.Assessment",
+        "Type": "EduSync.Backend.DTOs.AssessmentDto",
         "MediaTypes": [
           "text/plain",
           "application/json",
@@ -85,8 +85,8 @@
         "IsRequired": true
       },
       {
-        "Name": "updated",
-        "Type": "EduSync.Backend.Models.Assessment",
+        "Name": "assessmentDto",
+        "Type": "EduSync.Backend.DTOs.AssessmentDto",
         "IsRequired": true
       }
     ],
@@ -124,7 +124,7 @@
     ],
     "ReturnTypes": [
       {
-        "Type": "System.Collections.Generic.IEnumerable\u00601[[EduSync.API.DTOs.AssessmentDto, EduSync.Backend, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[EduSync.Backend.DTOs.AssessmentDto, EduSync.Backend, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
         "MediaTypes": [
           "text/plain",
           "application/json",
@@ -144,7 +144,7 @@
     "Parameters": [],
     "ReturnTypes": [
       {
-        "Type": "System.Collections.Generic.IEnumerable\u00601[[EduSync.API.DTOs.AssessmentDto, EduSync.Backend, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[EduSync.Backend.DTOs.AssessmentDto, EduSync.Backend, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
         "MediaTypes": [
           "text/plain",
           "application/json",
@@ -180,7 +180,7 @@
     "Parameters": [
       {
         "Name": "dto",
-        "Type": "CreateUserDto",
+        "Type": "EduSync.Backend.Controllers.RegisterUserDto",
         "IsRequired": true
       }
     ],
@@ -196,7 +196,7 @@
     "Parameters": [],
     "ReturnTypes": [
       {
-        "Type": "System.Collections.Generic.IEnumerable\u00601[[EduSync.API.DTOs.CourseDto, EduSync.Backend, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[EduSync.Backend.DTOs.CourseDto, EduSync.Backend, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
         "MediaTypes": [
           "text/plain",
           "application/json",
@@ -208,21 +208,21 @@
   },
   {
     "ContainingType": "EduSync.Backend.Controllers.CoursesController",
-    "Method": "PostCourse",
+    "Method": "CreateCourse",
     "RelativePath": "api/Courses",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
     "Parameters": [
       {
-        "Name": "dto",
-        "Type": "EduSync.API.DTOs.CreateCourseDto",
+        "Name": "createCourseDto",
+        "Type": "EduSync.Backend.DTOs.CreateCourseDto",
         "IsRequired": true
       }
     ],
     "ReturnTypes": [
       {
-        "Type": "EduSync.API.DTOs.CourseDto",
+        "Type": "EduSync.Backend.DTOs.CourseDto",
         "MediaTypes": [
           "text/plain",
           "application/json",
@@ -234,7 +234,7 @@
   },
   {
     "ContainingType": "EduSync.Backend.Controllers.CoursesController",
-    "Method": "GetCourseById",
+    "Method": "GetCourse",
     "RelativePath": "api/Courses/{id}",
     "HttpMethod": "GET",
     "IsController": true,
@@ -248,7 +248,7 @@
     ],
     "ReturnTypes": [
       {
-        "Type": "EduSync.API.DTOs.CourseDto",
+        "Type": "EduSync.Backend.DTOs.CourseDto",
         "MediaTypes": [
           "text/plain",
           "application/json",
@@ -260,7 +260,7 @@
   },
   {
     "ContainingType": "EduSync.Backend.Controllers.CoursesController",
-    "Method": "PutCourse",
+    "Method": "UpdateCourse",
     "RelativePath": "api/Courses/{id}",
     "HttpMethod": "PUT",
     "IsController": true,
@@ -272,8 +272,8 @@
         "IsRequired": true
       },
       {
-        "Name": "updatedCourse",
-        "Type": "EduSync.Backend.Models.Course",
+        "Name": "updateCourseDto",
+        "Type": "EduSync.Backend.DTOs.UpdateCourseDto",
         "IsRequired": true
       }
     ],
@@ -297,21 +297,15 @@
   },
   {
     "ContainingType": "EduSync.Backend.Controllers.CoursesController",
-    "Method": "GetAssessmentsByCourse",
-    "RelativePath": "api/Courses/byCourse/{courseId}",
+    "Method": "GetAvailableCourses",
+    "RelativePath": "api/Courses/available",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
-    "Parameters": [
-      {
-        "Name": "courseId",
-        "Type": "System.Guid",
-        "IsRequired": true
-      }
-    ],
+    "Parameters": [],
     "ReturnTypes": [
       {
-        "Type": "System.Collections.Generic.IEnumerable\u00601[[EduSync.API.DTOs.AssessmentDto, EduSync.Backend, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[EduSync.Backend.DTOs.CourseDto, EduSync.Backend, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
         "MediaTypes": [
           "text/plain",
           "application/json",
@@ -320,22 +314,6 @@
         "StatusCode": 200
       }
     ]
-  },
-  {
-    "ContainingType": "EduSync.Backend.Controllers.CoursesController",
-    "Method": "Enroll",
-    "RelativePath": "api/Courses/enroll/{courseId}",
-    "HttpMethod": "POST",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "courseId",
-        "Type": "System.Guid",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": []
   },
   {
     "ContainingType": "EduSync.Backend.Controllers.CoursesController",
@@ -347,7 +325,27 @@
     "Parameters": [],
     "ReturnTypes": [
       {
-        "Type": "System.Collections.Generic.IEnumerable\u00601[[EduSync.API.DTOs.CourseDto, EduSync.Backend, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[EduSync.Backend.DTOs.CourseDto, EduSync.Backend, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "EduSync.Backend.Controllers.CoursesController",
+    "Method": "CreateTestCourses",
+    "RelativePath": "api/Courses/test/create",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[EduSync.Backend.DTOs.CourseDto, EduSync.Backend, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
         "MediaTypes": [
           "text/plain",
           "application/json",
@@ -359,7 +357,27 @@
   },
   {
     "ContainingType": "EduSync.Backend.Controllers.EnrollmentsController",
-    "Method": "CreateEnrollment",
+    "Method": "GetEnrollments",
+    "RelativePath": "api/Enrollments",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[EduSync.Backend.DTOs.EnrollmentResponseDto, EduSync.Backend, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "EduSync.Backend.Controllers.EnrollmentsController",
+    "Method": "PostEnrollment",
     "RelativePath": "api/Enrollments",
     "HttpMethod": "POST",
     "IsController": true,
@@ -373,7 +391,7 @@
     ],
     "ReturnTypes": [
       {
-        "Type": "EduSync.Backend.Models.Enrollment",
+        "Type": "EduSync.Backend.DTOs.EnrollmentResponseDto",
         "MediaTypes": [
           "text/plain",
           "application/json",
@@ -399,7 +417,7 @@
     ],
     "ReturnTypes": [
       {
-        "Type": "EduSync.Backend.Models.Enrollment",
+        "Type": "EduSync.Backend.DTOs.EnrollmentResponseDto",
         "MediaTypes": [
           "text/plain",
           "application/json",
@@ -427,24 +445,8 @@
   },
   {
     "ContainingType": "EduSync.Backend.Controllers.EnrollmentsController",
-    "Method": "MarkAsCompleted",
-    "RelativePath": "api/Enrollments/{id}/complete",
-    "HttpMethod": "PATCH",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "id",
-        "Type": "System.Guid",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "EduSync.Backend.Controllers.EnrollmentsController",
-    "Method": "GetCourseEnrollments",
-    "RelativePath": "api/Enrollments/course/{courseId}",
+    "Method": "CheckEnrollment",
+    "RelativePath": "api/Enrollments/check/{courseId}",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -457,7 +459,7 @@
     ],
     "ReturnTypes": [
       {
-        "Type": "System.Collections.Generic.IEnumerable\u00601[[EduSync.Backend.Models.Enrollment, EduSync.Backend, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "Type": "System.Boolean",
         "MediaTypes": [
           "text/plain",
           "application/json",
@@ -469,21 +471,21 @@
   },
   {
     "ContainingType": "EduSync.Backend.Controllers.EnrollmentsController",
-    "Method": "GetUserEnrollments",
-    "RelativePath": "api/Enrollments/user/{userId}",
+    "Method": "GetEnrolledStudents",
+    "RelativePath": "api/Enrollments/course/{courseId}/students",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
     "Parameters": [
       {
-        "Name": "userId",
+        "Name": "courseId",
         "Type": "System.Guid",
         "IsRequired": true
       }
     ],
     "ReturnTypes": [
       {
-        "Type": "System.Collections.Generic.IEnumerable\u00601[[EduSync.Backend.Models.Enrollment, EduSync.Backend, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[EduSync.Backend.DTOs.StudentDto, EduSync.Backend, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
         "MediaTypes": [
           "text/plain",
           "application/json",
@@ -492,6 +494,89 @@
         "StatusCode": 200
       }
     ]
+  },
+  {
+    "ContainingType": "EduSync.Backend.Controllers.EnrollmentsController",
+    "Method": "GetStudentEnrollments",
+    "RelativePath": "api/Enrollments/student",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[EduSync.Backend.Models.Course, EduSync.Backend, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "EduSync.Backend.Controllers.FilesController",
+    "Method": "GetCourseUrls",
+    "RelativePath": "api/Files/{courseId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "courseId",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "EduSync.Backend.Controllers.FilesController",
+    "Method": "DeleteCourseUrls",
+    "RelativePath": "api/Files/{courseId}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "courseId",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "EduSync.Backend.Controllers.FilesController",
+    "Method": "Test",
+    "RelativePath": "api/Files/test",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "EduSync.Backend.Controllers.FilesController",
+    "Method": "SaveCourseUrls",
+    "RelativePath": "api/Files/upload",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "courseId",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "urls",
+        "Type": "EduSync.Backend.Controllers.CourseUrlsDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
   },
   {
     "ContainingType": "EduSync.Backend.Controllers.ResultsController",
@@ -503,7 +588,33 @@
     "Parameters": [],
     "ReturnTypes": [
       {
-        "Type": "System.Collections.Generic.IEnumerable\u00601[[EduSync.API.DTOs.ResultDto, EduSync.Backend, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[EduSync.Backend.DTOs.ResultDto, EduSync.Backend, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "EduSync.Backend.Controllers.ResultsController",
+    "Method": "PostResult",
+    "RelativePath": "api/Results",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "createResultDto",
+        "Type": "EduSync.Backend.DTOs.CreateResultDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "EduSync.Backend.DTOs.ResultDto",
         "MediaTypes": [
           "text/plain",
           "application/json",
@@ -529,7 +640,7 @@
     ],
     "ReturnTypes": [
       {
-        "Type": "EduSync.Backend.Models.Result",
+        "Type": "EduSync.Backend.DTOs.ResultDto",
         "MediaTypes": [
           "text/plain",
           "application/json",
@@ -538,6 +649,27 @@
         "StatusCode": 200
       }
     ]
+  },
+  {
+    "ContainingType": "EduSync.Backend.Controllers.ResultsController",
+    "Method": "PutResult",
+    "RelativePath": "api/Results/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": true
+      },
+      {
+        "Name": "updateResultDto",
+        "Type": "EduSync.Backend.DTOs.UpdateResultDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
   },
   {
     "ContainingType": "EduSync.Backend.Controllers.ResultsController",
@@ -571,7 +703,7 @@
     ],
     "ReturnTypes": [
       {
-        "Type": "System.Collections.Generic.IEnumerable\u00601[[EduSync.API.DTOs.ResultDto, EduSync.Backend, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[EduSync.Backend.DTOs.ResultDto, EduSync.Backend, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
         "MediaTypes": [
           "text/plain",
           "application/json",
@@ -592,22 +724,6 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "EduSync.Backend.Controllers.ResultsController",
-    "Method": "SubmitResult",
-    "RelativePath": "api/Results/submit",
-    "HttpMethod": "POST",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "submission",
-        "Type": "EduSync.API.DTOs.QuizSubmissionDto",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
     "ContainingType": "EduSync.Backend.Controllers.UsersController",
     "Method": "GetUsers",
     "RelativePath": "api/Users",
@@ -617,7 +733,7 @@
     "Parameters": [],
     "ReturnTypes": [
       {
-        "Type": "System.Collections.Generic.IEnumerable\u00601[[UserDto, EduSync.Backend, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[EduSync.Backend.DTOs.UserDto, EduSync.Backend, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
         "MediaTypes": [
           "text/plain",
           "application/json",
@@ -629,19 +745,29 @@
   },
   {
     "ContainingType": "EduSync.Backend.Controllers.UsersController",
-    "Method": "Register",
+    "Method": "PostUser",
     "RelativePath": "api/Users",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
     "Parameters": [
       {
-        "Name": "dto",
-        "Type": "CreateUserDto",
+        "Name": "createUserDto",
+        "Type": "EduSync.Backend.DTOs.CreateUserDto",
         "IsRequired": true
       }
     ],
-    "ReturnTypes": []
+    "ReturnTypes": [
+      {
+        "Type": "EduSync.Backend.DTOs.UserDto",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
   },
   {
     "ContainingType": "EduSync.Backend.Controllers.UsersController",
@@ -659,7 +785,7 @@
     ],
     "ReturnTypes": [
       {
-        "Type": "UserDto",
+        "Type": "EduSync.Backend.DTOs.UserDto",
         "MediaTypes": [
           "text/plain",
           "application/json",
@@ -683,8 +809,8 @@
         "IsRequired": true
       },
       {
-        "Name": "updatedUser",
-        "Type": "EduSync.Backend.Models.User",
+        "Name": "updateUserDto",
+        "Type": "EduSync.Backend.DTOs.UpdateUserDto",
         "IsRequired": true
       }
     ],

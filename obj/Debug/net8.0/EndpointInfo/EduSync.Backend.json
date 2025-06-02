@@ -71,17 +71,17 @@
             "content": {
               "text/plain": {
                 "schema": {
-                  "$ref": "#/components/schemas/Assessment"
+                  "$ref": "#/components/schemas/AssessmentDto"
                 }
               },
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/Assessment"
+                  "$ref": "#/components/schemas/AssessmentDto"
                 }
               },
               "text/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/Assessment"
+                  "$ref": "#/components/schemas/AssessmentDto"
                 }
               }
             }
@@ -111,17 +111,17 @@
             "content": {
               "text/plain": {
                 "schema": {
-                  "$ref": "#/components/schemas/Assessment"
+                  "$ref": "#/components/schemas/AssessmentDto"
                 }
               },
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/Assessment"
+                  "$ref": "#/components/schemas/AssessmentDto"
                 }
               },
               "text/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/Assessment"
+                  "$ref": "#/components/schemas/AssessmentDto"
                 }
               }
             }
@@ -147,17 +147,17 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/Assessment"
+                "$ref": "#/components/schemas/AssessmentDto"
               }
             },
             "text/json": {
               "schema": {
-                "$ref": "#/components/schemas/Assessment"
+                "$ref": "#/components/schemas/AssessmentDto"
               }
             },
             "application/*+json": {
               "schema": {
-                "$ref": "#/components/schemas/Assessment"
+                "$ref": "#/components/schemas/AssessmentDto"
               }
             }
           }
@@ -317,17 +317,17 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/CreateUserDto"
+                "$ref": "#/components/schemas/RegisterUserDto"
               }
             },
             "text/json": {
               "schema": {
-                "$ref": "#/components/schemas/CreateUserDto"
+                "$ref": "#/components/schemas/RegisterUserDto"
               }
             },
             "application/*+json": {
               "schema": {
-                "$ref": "#/components/schemas/CreateUserDto"
+                "$ref": "#/components/schemas/RegisterUserDto"
               }
             }
           }
@@ -423,6 +423,44 @@
         }
       }
     },
+    "/api/Courses/available": {
+      "get": {
+        "tags": [
+          "Courses"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/CourseDto"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/CourseDto"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/CourseDto"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
     "/api/Courses/{id}": {
       "get": {
         "tags": [
@@ -481,17 +519,17 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/Course"
+                "$ref": "#/components/schemas/UpdateCourseDto"
               }
             },
             "text/json": {
               "schema": {
-                "$ref": "#/components/schemas/Course"
+                "$ref": "#/components/schemas/UpdateCourseDto"
               }
             },
             "application/*+json": {
               "schema": {
-                "$ref": "#/components/schemas/Course"
+                "$ref": "#/components/schemas/UpdateCourseDto"
               }
             }
           }
@@ -520,55 +558,6 @@
         "responses": {
           "200": {
             "description": "OK"
-          }
-        }
-      }
-    },
-    "/api/Courses/byCourse/{courseId}": {
-      "get": {
-        "tags": [
-          "Courses"
-        ],
-        "parameters": [
-          {
-            "name": "courseId",
-            "in": "path",
-            "required": true,
-            "schema": {
-              "type": "string",
-              "format": "uuid"
-            }
-          }
-        ],
-        "responses": {
-          "200": {
-            "description": "OK",
-            "content": {
-              "text/plain": {
-                "schema": {
-                  "type": "array",
-                  "items": {
-                    "$ref": "#/components/schemas/AssessmentDto"
-                  }
-                }
-              },
-              "application/json": {
-                "schema": {
-                  "type": "array",
-                  "items": {
-                    "$ref": "#/components/schemas/AssessmentDto"
-                  }
-                }
-              },
-              "text/json": {
-                "schema": {
-                  "type": "array",
-                  "items": {
-                    "$ref": "#/components/schemas/AssessmentDto"
-                  }
-                }
-              }
-            }
           }
         }
       }
@@ -611,10 +600,86 @@
         }
       }
     },
-    "/api/Courses/enroll/{courseId}": {
-      "post": {
+    "/api/Courses/test/create": {
+      "get": {
         "tags": [
           "Courses"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/CourseDto"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/CourseDto"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/CourseDto"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/Enrollments/student": {
+      "get": {
+        "tags": [
+          "Enrollments"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Course"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Course"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Course"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/Enrollments/check/{courseId}": {
+      "get": {
+        "tags": [
+          "Enrollments"
         ],
         "parameters": [
           {
@@ -629,12 +694,65 @@
         ],
         "responses": {
           "200": {
-            "description": "OK"
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "boolean"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "boolean"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "boolean"
+                }
+              }
+            }
           }
         }
       }
     },
     "/api/Enrollments": {
+      "get": {
+        "tags": [
+          "Enrollments"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/EnrollmentResponseDto"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/EnrollmentResponseDto"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/EnrollmentResponseDto"
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
       "post": {
         "tags": [
           "Enrollments"
@@ -664,115 +782,17 @@
             "content": {
               "text/plain": {
                 "schema": {
-                  "$ref": "#/components/schemas/Enrollment"
+                  "$ref": "#/components/schemas/EnrollmentResponseDto"
                 }
               },
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/Enrollment"
+                  "$ref": "#/components/schemas/EnrollmentResponseDto"
                 }
               },
               "text/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/Enrollment"
-                }
-              }
-            }
-          }
-        }
-      }
-    },
-    "/api/Enrollments/user/{userId}": {
-      "get": {
-        "tags": [
-          "Enrollments"
-        ],
-        "parameters": [
-          {
-            "name": "userId",
-            "in": "path",
-            "required": true,
-            "schema": {
-              "type": "string",
-              "format": "uuid"
-            }
-          }
-        ],
-        "responses": {
-          "200": {
-            "description": "OK",
-            "content": {
-              "text/plain": {
-                "schema": {
-                  "type": "array",
-                  "items": {
-                    "$ref": "#/components/schemas/Enrollment"
-                  }
-                }
-              },
-              "application/json": {
-                "schema": {
-                  "type": "array",
-                  "items": {
-                    "$ref": "#/components/schemas/Enrollment"
-                  }
-                }
-              },
-              "text/json": {
-                "schema": {
-                  "type": "array",
-                  "items": {
-                    "$ref": "#/components/schemas/Enrollment"
-                  }
-                }
-              }
-            }
-          }
-        }
-      }
-    },
-    "/api/Enrollments/course/{courseId}": {
-      "get": {
-        "tags": [
-          "Enrollments"
-        ],
-        "parameters": [
-          {
-            "name": "courseId",
-            "in": "path",
-            "required": true,
-            "schema": {
-              "type": "string",
-              "format": "uuid"
-            }
-          }
-        ],
-        "responses": {
-          "200": {
-            "description": "OK",
-            "content": {
-              "text/plain": {
-                "schema": {
-                  "type": "array",
-                  "items": {
-                    "$ref": "#/components/schemas/Enrollment"
-                  }
-                }
-              },
-              "application/json": {
-                "schema": {
-                  "type": "array",
-                  "items": {
-                    "$ref": "#/components/schemas/Enrollment"
-                  }
-                }
-              },
-              "text/json": {
-                "schema": {
-                  "type": "array",
-                  "items": {
-                    "$ref": "#/components/schemas/Enrollment"
-                  }
+                  "$ref": "#/components/schemas/EnrollmentResponseDto"
                 }
               }
             }
@@ -802,17 +822,17 @@
             "content": {
               "text/plain": {
                 "schema": {
-                  "$ref": "#/components/schemas/Enrollment"
+                  "$ref": "#/components/schemas/EnrollmentResponseDto"
                 }
               },
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/Enrollment"
+                  "$ref": "#/components/schemas/EnrollmentResponseDto"
                 }
               },
               "text/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/Enrollment"
+                  "$ref": "#/components/schemas/EnrollmentResponseDto"
                 }
               }
             }
@@ -841,19 +861,139 @@
         }
       }
     },
-    "/api/Enrollments/{id}/complete": {
-      "patch": {
+    "/api/Enrollments/course/{courseId}/students": {
+      "get": {
         "tags": [
           "Enrollments"
         ],
         "parameters": [
           {
-            "name": "id",
+            "name": "courseId",
             "in": "path",
             "required": true,
             "schema": {
               "type": "string",
               "format": "uuid"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/StudentDto"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/StudentDto"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/StudentDto"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/Files/test": {
+      "get": {
+        "tags": [
+          "Files"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Files/upload": {
+      "post": {
+        "tags": [
+          "Files"
+        ],
+        "parameters": [
+          {
+            "name": "courseId",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/CourseUrlsDto"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/CourseUrlsDto"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/CourseUrlsDto"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Files/{courseId}": {
+      "get": {
+        "tags": [
+          "Files"
+        ],
+        "parameters": [
+          {
+            "name": "courseId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "Files"
+        ],
+        "parameters": [
+          {
+            "name": "courseId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
             }
           }
         ],
@@ -900,6 +1040,52 @@
             }
           }
         }
+      },
+      "post": {
+        "tags": [
+          "Results"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/CreateResultDto"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/CreateResultDto"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/CreateResultDto"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/ResultDto"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ResultDto"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ResultDto"
+                }
+              }
+            }
+          }
+        }
       }
     },
     "/api/Results/{id}": {
@@ -924,20 +1110,60 @@
             "content": {
               "text/plain": {
                 "schema": {
-                  "$ref": "#/components/schemas/Result"
+                  "$ref": "#/components/schemas/ResultDto"
                 }
               },
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/Result"
+                  "$ref": "#/components/schemas/ResultDto"
                 }
               },
               "text/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/Result"
+                  "$ref": "#/components/schemas/ResultDto"
                 }
               }
             }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "Results"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "format": "uuid"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/UpdateResultDto"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/UpdateResultDto"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/UpdateResultDto"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
           }
         }
       },
@@ -1024,37 +1250,6 @@
         }
       }
     },
-    "/api/Results/submit": {
-      "post": {
-        "tags": [
-          "Results"
-        ],
-        "requestBody": {
-          "content": {
-            "application/json": {
-              "schema": {
-                "$ref": "#/components/schemas/QuizSubmissionDto"
-              }
-            },
-            "text/json": {
-              "schema": {
-                "$ref": "#/components/schemas/QuizSubmissionDto"
-              }
-            },
-            "application/*+json": {
-              "schema": {
-                "$ref": "#/components/schemas/QuizSubmissionDto"
-              }
-            }
-          }
-        },
-        "responses": {
-          "200": {
-            "description": "OK"
-          }
-        }
-      }
-    },
     "/api/Users": {
       "get": {
         "tags": [
@@ -1117,7 +1312,24 @@
         },
         "responses": {
           "200": {
-            "description": "OK"
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/UserDto"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/UserDto"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/UserDto"
+                }
+              }
+            }
           }
         }
       }
@@ -1180,17 +1392,17 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/User"
+                "$ref": "#/components/schemas/UpdateUserDto"
               }
             },
             "text/json": {
               "schema": {
-                "$ref": "#/components/schemas/User"
+                "$ref": "#/components/schemas/UpdateUserDto"
               }
             },
             "application/*+json": {
               "schema": {
-                "$ref": "#/components/schemas/User"
+                "$ref": "#/components/schemas/UpdateUserDto"
               }
             }
           }
@@ -1229,7 +1441,6 @@
       "Assessment": {
         "required": [
           "courseId",
-          "maxScore",
           "questions",
           "title"
         ],
@@ -1239,25 +1450,24 @@
             "type": "string",
             "format": "uuid"
           },
-          "courseId": {
-            "type": "string",
-            "format": "uuid"
-          },
           "title": {
-            "maxLength": 100,
-            "minLength": 0,
+            "minLength": 1,
             "type": "string"
           },
           "questions": {
             "minLength": 1,
             "type": "string"
           },
-          "maxScore": {
-            "type": "integer",
-            "format": "int32"
+          "courseId": {
+            "type": "string",
+            "format": "uuid"
           },
           "course": {
             "$ref": "#/components/schemas/Course"
+          },
+          "maxScore": {
+            "type": "integer",
+            "format": "int32"
           },
           "results": {
             "type": "array",
@@ -1276,10 +1486,6 @@
             "type": "string",
             "format": "uuid"
           },
-          "courseId": {
-            "type": "string",
-            "format": "uuid"
-          },
           "title": {
             "type": "string",
             "nullable": true
@@ -1288,20 +1494,26 @@
             "type": "string",
             "nullable": true
           },
-          "maxScore": {
-            "type": "integer",
-            "format": "int32"
+          "courseId": {
+            "type": "string",
+            "format": "uuid"
           },
           "courseTitle": {
             "type": "string",
             "nullable": true
+          },
+          "maxScore": {
+            "type": "integer",
+            "format": "int32"
           }
         },
         "additionalProperties": false
       },
       "Course": {
         "required": [
+          "description",
           "instructorId",
+          "mediaUrl",
           "title"
         ],
         "type": "object",
@@ -1311,24 +1523,35 @@
             "format": "uuid"
           },
           "title": {
-            "maxLength": 100,
-            "minLength": 0,
+            "minLength": 1,
             "type": "string"
           },
           "description": {
-            "type": "string",
-            "nullable": true
+            "minLength": 1,
+            "type": "string"
           },
           "instructorId": {
             "type": "string",
             "format": "uuid"
           },
+          "instructor": {
+            "$ref": "#/components/schemas/User"
+          },
           "mediaUrl": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "courseContent": {
             "type": "string",
             "nullable": true
           },
-          "instructor": {
-            "$ref": "#/components/schemas/User"
+          "lastUpdated": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "createdAt": {
+            "type": "string",
+            "format": "date-time"
           },
           "assessments": {
             "type": "array",
@@ -1366,11 +1589,48 @@
             "type": "string",
             "format": "uuid"
           },
+          "instructorName": {
+            "type": "string",
+            "nullable": true
+          },
           "mediaUrl": {
             "type": "string",
             "nullable": true
           },
-          "instructorName": {
+          "enrollmentCount": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "assessmentCount": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "courseContent": {
+            "type": "string",
+            "nullable": true
+          },
+          "lastUpdated": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "createdAt": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "isEnrolled": {
+            "type": "boolean"
+          }
+        },
+        "additionalProperties": false
+      },
+      "CourseUrlsDto": {
+        "type": "object",
+        "properties": {
+          "courseContentUrl": {
+            "type": "string",
+            "nullable": true
+          },
+          "mediaUrl": {
             "type": "string",
             "nullable": true
           }
@@ -1378,6 +1638,12 @@
         "additionalProperties": false
       },
       "CreateAssessmentDto": {
+        "required": [
+          "courseId",
+          "maxScore",
+          "questions",
+          "title"
+        ],
         "type": "object",
         "properties": {
           "courseId": {
@@ -1385,12 +1651,12 @@
             "format": "uuid"
           },
           "title": {
-            "type": "string",
-            "nullable": true
+            "minLength": 1,
+            "type": "string"
           },
           "questions": {
-            "type": "string",
-            "nullable": true
+            "minLength": 1,
+            "type": "string"
           },
           "maxScore": {
             "type": "integer",
@@ -1400,45 +1666,85 @@
         "additionalProperties": false
       },
       "CreateCourseDto": {
+        "required": [
+          "description",
+          "instructorId",
+          "mediaUrl",
+          "title"
+        ],
         "type": "object",
         "properties": {
           "title": {
-            "type": "string",
-            "nullable": true
+            "minLength": 1,
+            "type": "string"
           },
           "description": {
-            "type": "string",
-            "nullable": true
+            "minLength": 1,
+            "type": "string"
           },
           "instructorId": {
             "type": "string",
             "format": "uuid"
           },
           "mediaUrl": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "courseContent": {
             "type": "string",
             "nullable": true
           }
         },
         "additionalProperties": false
       },
+      "CreateResultDto": {
+        "required": [
+          "assessmentId",
+          "score",
+          "submittedAnswers"
+        ],
+        "type": "object",
+        "properties": {
+          "assessmentId": {
+            "type": "string",
+            "format": "uuid"
+          },
+          "submittedAnswers": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "score": {
+            "type": "integer",
+            "format": "int32"
+          }
+        },
+        "additionalProperties": false
+      },
       "CreateUserDto": {
+        "required": [
+          "email",
+          "name",
+          "password",
+          "role"
+        ],
         "type": "object",
         "properties": {
           "name": {
-            "type": "string",
-            "nullable": true
+            "minLength": 1,
+            "type": "string"
           },
           "email": {
+            "minLength": 1,
             "type": "string",
-            "nullable": true
+            "format": "email"
           },
           "password": {
-            "type": "string",
-            "nullable": true
+            "minLength": 1,
+            "type": "string"
           },
           "role": {
-            "type": "string",
-            "nullable": true
+            "minLength": 1,
+            "type": "string"
           }
         },
         "additionalProperties": false
@@ -1454,19 +1760,19 @@
             "type": "string",
             "format": "uuid"
           },
-          "courseId": {
-            "type": "string",
-            "format": "uuid"
-          },
-          "title": {
-            "$ref": "#/components/schemas/Course"
-          },
           "userId": {
             "type": "string",
             "format": "uuid"
           },
-          "name": {
+          "user": {
             "$ref": "#/components/schemas/User"
+          },
+          "courseId": {
+            "type": "string",
+            "format": "uuid"
+          },
+          "course": {
+            "$ref": "#/components/schemas/Course"
           },
           "enrollmentDate": {
             "type": "string",
@@ -1479,50 +1785,93 @@
         "additionalProperties": false
       },
       "EnrollmentDto": {
+        "required": [
+          "courseId"
+        ],
         "type": "object",
         "properties": {
           "courseId": {
+            "type": "string",
+            "format": "uuid"
+          }
+        },
+        "additionalProperties": false
+      },
+      "EnrollmentResponseDto": {
+        "type": "object",
+        "properties": {
+          "enrollmentId": {
             "type": "string",
             "format": "uuid"
           },
           "userId": {
             "type": "string",
             "format": "uuid"
+          },
+          "courseId": {
+            "type": "string",
+            "format": "uuid"
+          },
+          "enrollmentDate": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "isCompleted": {
+            "type": "boolean"
           }
         },
         "additionalProperties": false
       },
       "LoginDto": {
+        "required": [
+          "email",
+          "password"
+        ],
         "type": "object",
         "properties": {
           "email": {
+            "minLength": 1,
             "type": "string",
-            "nullable": true
+            "format": "email"
           },
           "password": {
-            "type": "string",
-            "nullable": true
+            "minLength": 1,
+            "type": "string"
           }
         },
         "additionalProperties": false
       },
-      "QuizSubmissionDto": {
+      "RegisterUserDto": {
+        "required": [
+          "confirmPassword",
+          "email",
+          "name",
+          "password",
+          "role"
+        ],
         "type": "object",
         "properties": {
-          "assessmentId": {
+          "name": {
+            "maxLength": 100,
+            "minLength": 0,
+            "type": "string"
+          },
+          "email": {
+            "minLength": 1,
             "type": "string",
-            "format": "uuid"
+            "format": "email"
           },
-          "answers": {
-            "type": "array",
-            "items": {
-              "$ref": "#/components/schemas/SubmittedAnswerDto"
-            },
-            "nullable": true
+          "password": {
+            "minLength": 6,
+            "type": "string"
           },
-          "score": {
-            "type": "integer",
-            "format": "int32"
+          "confirmPassword": {
+            "minLength": 6,
+            "type": "string"
+          },
+          "role": {
+            "minLength": 1,
+            "type": "string"
           }
         },
         "additionalProperties": false
@@ -1531,6 +1880,7 @@
         "required": [
           "assessmentId",
           "score",
+          "submittedAnswers",
           "userId"
         ],
         "type": "object",
@@ -1547,8 +1897,8 @@
             "$ref": "#/components/schemas/Assessment"
           },
           "submittedAnswers": {
-            "type": "string",
-            "nullable": true
+            "minLength": 1,
+            "type": "string"
           },
           "userId": {
             "type": "string",
@@ -1583,9 +1933,21 @@
             "type": "string",
             "format": "uuid"
           },
+          "assessmentTitle": {
+            "type": "string",
+            "nullable": true
+          },
+          "submittedAnswers": {
+            "type": "string",
+            "nullable": true
+          },
           "userId": {
             "type": "string",
             "format": "uuid"
+          },
+          "userName": {
+            "type": "string",
+            "nullable": true
           },
           "score": {
             "type": "integer",
@@ -1595,14 +1957,6 @@
             "type": "string",
             "format": "date-time"
           },
-          "userName": {
-            "type": "string",
-            "nullable": true
-          },
-          "assessmentTitle": {
-            "type": "string",
-            "nullable": true
-          },
           "submittedAt": {
             "type": "string",
             "format": "date-time"
@@ -1610,16 +1964,110 @@
         },
         "additionalProperties": false
       },
-      "SubmittedAnswerDto": {
+      "StudentDto": {
         "type": "object",
         "properties": {
-          "questionIndex": {
-            "type": "integer",
-            "format": "int32"
+          "userId": {
+            "type": "string",
+            "format": "uuid"
           },
-          "answer": {
+          "name": {
             "type": "string",
             "nullable": true
+          },
+          "email": {
+            "type": "string",
+            "nullable": true
+          },
+          "enrollmentDate": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "isCompleted": {
+            "type": "boolean"
+          }
+        },
+        "additionalProperties": false
+      },
+      "UpdateCourseDto": {
+        "required": [
+          "description",
+          "instructorId",
+          "mediaUrl",
+          "title"
+        ],
+        "type": "object",
+        "properties": {
+          "courseId": {
+            "type": "string",
+            "format": "uuid"
+          },
+          "title": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "description": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "instructorId": {
+            "type": "string",
+            "format": "uuid"
+          },
+          "mediaUrl": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "courseContent": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "UpdateResultDto": {
+        "required": [
+          "resultId",
+          "score",
+          "submittedAnswers"
+        ],
+        "type": "object",
+        "properties": {
+          "resultId": {
+            "type": "string",
+            "format": "uuid"
+          },
+          "submittedAnswers": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "score": {
+            "type": "integer",
+            "format": "int32"
+          }
+        },
+        "additionalProperties": false
+      },
+      "UpdateUserDto": {
+        "required": [
+          "email",
+          "name",
+          "role"
+        ],
+        "type": "object",
+        "properties": {
+          "name": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "email": {
+            "minLength": 1,
+            "type": "string",
+            "format": "email"
+          },
+          "role": {
+            "minLength": 1,
+            "type": "string"
           }
         },
         "additionalProperties": false
@@ -1638,8 +2086,7 @@
             "format": "uuid"
           },
           "name": {
-            "maxLength": 100,
-            "minLength": 0,
+            "minLength": 1,
             "type": "string"
           },
           "email": {
@@ -1695,6 +2142,10 @@
             "nullable": true
           },
           "role": {
+            "type": "string",
+            "nullable": true
+          },
+          "password": {
             "type": "string",
             "nullable": true
           }
