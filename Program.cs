@@ -8,7 +8,15 @@ using System.Text;
 
 var builder = WebApplication.CreateBuilder(args);
 
-builder.Services.AddApplicationInsightsTelemetry();
+var appInsightsConnectionString = builder.Configuration["APPLICATIONINSIGHTS_CONNECTION_STRING"];
+
+if (string.IsNullOrWhiteSpace(appInsightsConnectionString))
+{
+    throw new InvalidOperationException("Application Insights connection string not found.");
+}
+
+builder.Services.AddApplicationInsightsTelemetry(appInsightsConnectionString);
+
 
 // Add services to the container
 builder.Services.AddControllers()
